@@ -23,7 +23,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header container" role="banner">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
 		
 			<div class="container">
 				<div class="row">
@@ -35,14 +35,14 @@
 					            <span class="icon-bar"></span>
 							</button>
 				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
+				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="wp-content/themes/upBootstrap3WP-master/img/logo.png" alt="logo"></a>
 				            
 				        </div>
 						
 						<?php 
 						$args = array('theme_location' => 'primary', 
 									  'container_class' => 'navbar-collapse collapse', 
-									  'menu_class' => 'nav navbar-nav',
+									  'menu_class' => 'nav navbar-nav pull-right',
 									  'fallback_cb' => '',
 			                          'menu_id' => 'main-menu',
 			                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
