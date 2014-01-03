@@ -18,8 +18,8 @@
 						<?php do_action( 'upbootwp_credits' ); ?>
 						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
 						<span class="sep"> | </span>
-						<?php printf(__('Theme: %1$s by %2$s.', 'upbootwp' ), 'upBootWP', '<a href="http://upplex.de" rel="designer">upplex</a>'); ?>
-					</div><!-- .site-info -->
+<!-- 						<?php printf(__('Theme: %1$s by %2$s.', 'upbootwp' ), 'upBootWP', '<a href="http://upplex.de" rel="designer">upplex</a>'); ?>
+ -->					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
