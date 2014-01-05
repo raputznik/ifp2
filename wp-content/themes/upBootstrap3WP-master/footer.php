@@ -10,10 +10,18 @@
 ?>
 
 	</div><!-- #content -->
+	</div> <!-- #wrap -->
+	<footer id="footer" class="site-footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-12 contact-info">
+				
+
+				<p><strong>Contact Us</strong>  P: (403) 234-0342  |  F: (403) 234-8579  |  E: info@ifp-canada.com  |  Suite 810, 744 – 4th Avenue S.W., Calgary, AB, T2P 3T4</p>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-12">
-				<footer id="colophon" class="site-footer" role="contentinfo">
 					<div class="site-info">
 						<?php do_action( 'upbootwp_credits' ); ?>
 						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
