@@ -113,6 +113,16 @@ require get_template_directory().'/inc/customizer.php';
  */
 require get_template_directory().'/inc/jetpack.php';
 
+function register_main_menus() {
+    register_nav_menus(
+        array(
+            'primary-menu' => __( 'Primary Menu' ),
+            'footer' => __( 'Footer Navigation')
+        )
+    );
+}
+
+
 
 /**
  * upbootwp_breadcrumbs function.

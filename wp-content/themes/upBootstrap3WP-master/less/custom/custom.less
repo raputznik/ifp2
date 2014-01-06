@@ -12,6 +12,13 @@ html, body {
 	// padding: 0 0 60px;
 }
 
+ul {
+		list-style: none;
+
+}
+
+
+
 #main {
 	  overflow:auto;
   padding-bottom:90px; /* this needs to be bigger than footer height*/
@@ -61,6 +68,21 @@ p{
 
 }
 
+.nav > li > a {
+	padding: 10px 10px;
+}
+
+.nav .current_page_item {
+	color: #f82620;
+}
+
+
+// This hides the dropdown arrow
+
+.caret {
+	display: none;
+}
+
 
 #menu-item {
 	padding-left: 0;
@@ -69,7 +91,7 @@ p{
 
 
 .navbar-brand {
-	display: none;
+	padding-left: 0;
 	padding-right: 0;
 	padding-bottom: 0;
 }
@@ -83,7 +105,7 @@ p{
 }
 
 #main-menu {
-	padding-top: 5%;
+	padding-top: 6%;
 }
 
 #content {
@@ -116,7 +138,7 @@ p{
 }
 
 .proud {
-	margin-top: 5%;
+	margin-top: 4%;
 	padding-left: 5%;
 
 }
@@ -206,6 +228,7 @@ p{
 
 .justify {
 	padding-right: 0 !important;
+	padding-top: 3px;
 }
 
 .nextstep {
@@ -310,6 +333,82 @@ h3 {
 	border-bottom: 1px solid #bfbfbf;
 	padding: 20px 0 20px 0;
 }
+
+/* ----- menu on footer CSS  ---- */
+/* ----- JER EDIT  ---- */
+
+.footer_menu {
+	list-style: none;
+	font-size:14px; 
+	background-color: #fff;
+	font-family: 'Titillium Web', sans-serif; 
+	/*margin:10px 0; */
+	color: #fff;}
+
+ul.footer_menu {
+	list-style: none;	
+	background-color: #fff;
+	font-size:14px; 
+	/*padding: 20px; */
+	margin:0; 
+	width: 100%;
+}
+
+.footer_menu, .footer_menu ul { 
+	line-height:0.9; 
+	margin:0; 
+	padding:0; 
+}
+.footer_menu li { 
+	float:left; 
+	padding:20px; 
+	margin: 0; 
+	font-weight: 
+	700;
+}
+.footer_menu a{ 
+	color:#000; 
+	text-decoration: none; 
+}
+.footer_menu a:hover { 
+	color:#f82620;
+}
+.footer_menu ul {
+	padding: 0;
+}
+.footer_menu ul { 
+	margin:0; 
+	padding: 
+	8px 0 0 0;
+}
+.footer_menu li li{
+	font-weight: normal;
+	float: none;
+	padding: 0 6px 6px 0;
+}
+// .cleaner{clear: both;}
+.current_page_item a{
+	color: #f82620;
+}
+
+.footer_menu .current_page_item li a{
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

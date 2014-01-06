@@ -5964,6 +5964,9 @@ body {
   /* Negative indent footer by its height */
   /* Pad bottom by footer height */
 }
+ul {
+  list-style: none;
+}
 #main {
   overflow: auto;
   padding-bottom: 90px;
@@ -6002,12 +6005,21 @@ p {
   margin-bottom: 0;
   font-weight: 600;
 }
+.nav > li > a {
+  padding: 10px 10px;
+}
+.nav .current_page_item {
+  color: #f82620;
+}
+.caret {
+  display: none;
+}
 #menu-item {
   padding-left: 0;
   padding-right: 0;
 }
 .navbar-brand {
-  display: none;
+  padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
 }
@@ -6018,7 +6030,7 @@ p {
   color: #f82620 !important;
 }
 #main-menu {
-  padding-top: 5%;
+  padding-top: 6%;
 }
 #content {
   padding-top: 0;
@@ -6043,7 +6055,7 @@ p {
   margin: 0 auto;
 }
 .proud {
-  margin-top: 5%;
+  margin-top: 4%;
   padding-left: 5%;
 }
 .eor {
@@ -6107,6 +6119,7 @@ p {
 }
 .justify {
   padding-right: 0 !important;
+  padding-top: 3px;
 }
 .nextstep {
   font-weight: 600;
@@ -6186,4 +6199,59 @@ h3 {
   border-top: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
   padding: 20px 0 20px 0;
+}
+/* ----- menu on footer CSS  ---- */
+/* ----- JER EDIT  ---- */
+.footer_menu {
+  list-style: none;
+  font-size: 14px;
+  background-color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  /*margin:10px 0; */
+  color: #fff;
+}
+ul.footer_menu {
+  list-style: none;
+  background-color: #fff;
+  font-size: 14px;
+  /*padding: 20px; */
+  margin: 0;
+  width: 100%;
+}
+.footer_menu,
+.footer_menu ul {
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+}
+.footer_menu li {
+  float: left;
+  padding: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+.footer_menu a {
+  color: #000;
+  text-decoration: none;
+}
+.footer_menu a:hover {
+  color: #f82620;
+}
+.footer_menu ul {
+  padding: 0;
+}
+.footer_menu ul {
+  margin: 0;
+  padding: 8px 0 0 0;
+}
+.footer_menu li li {
+  font-weight: normal;
+  float: none;
+  padding: 0 6px 6px 0;
+}
+.current_page_item a {
+  color: #f82620;
+}
+.footer_menu .current_page_item li a {
+  color: #999;
 }
