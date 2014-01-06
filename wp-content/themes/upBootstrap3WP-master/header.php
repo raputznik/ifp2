@@ -16,7 +16,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="js/css3-mediaqueries.js"></script>
+<!-- <script src="js/css3-mediaqueries.js"></script> -->
    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,7 +44,7 @@
 					            <span class="icon-bar"></span>
 							</button>
 				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="wp-content/themes/upBootstrap3WP-master/img/logo.png" alt="logo"></a>
+				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/logo.png" alt="logo"></a>
 				            
 				        </div>
 						

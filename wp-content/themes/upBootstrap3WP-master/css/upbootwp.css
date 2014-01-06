@@ -3775,7 +3775,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #f82620;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -5996,7 +5996,7 @@ p {
   line-height: 1.21428571465;
 }
 .container {
-  max-width: 995px;
+  max-width: 980px;
   background-color: #fff;
 }
 .navbar {
@@ -6008,16 +6008,6 @@ p {
 .nav > li > a {
   padding: 10px 10px;
 }
-.nav .current_page_item {
-  color: #f82620;
-}
-.caret {
-  display: none;
-}
-#menu-item {
-  padding-left: 0;
-  padding-right: 0;
-}
 .navbar-brand {
   padding-left: 0;
   padding-right: 0;
@@ -6026,8 +6016,15 @@ p {
 .navbar a {
   color: #164c94 !important;
 }
-.navbar a:hover {
+ul.nav a:hover {
   color: #f82620 !important;
+}
+.caret {
+  display: none;
+}
+#menu-item {
+  padding-left: 0;
+  padding-right: 0;
 }
 #main-menu {
   padding-top: 6%;
@@ -6055,7 +6052,7 @@ p {
   margin: 0 auto;
 }
 .proud {
-  margin-top: 4%;
+  margin-top: 3%;
   padding-left: 5%;
 }
 .eor {
@@ -6082,6 +6079,7 @@ p {
   margin-right: 0px;
 }
 .success-holder {
+  max-width: 615px;
   min-height: 225px;
   background-color: #f2f2f2;
   margin-right: 0px;
@@ -6159,7 +6157,7 @@ h3 {
 .newsbox {
   padding: 0;
   background-color: #f2f2f2;
-  max-width: 305px;
+  max-width: 290px;
   margin-right: 20px;
   min-height: 225px;
 }
@@ -6254,4 +6252,23 @@ ul.footer_menu {
 }
 .footer_menu .current_page_item li a {
   color: #999;
+}
+.page-title1 {
+  min-height: 60px;
+  padding-top: 15px;
+  border-bottom: none;
+}
+.entry-content h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  padding: 20px 0 15px 0;
+}
+.call {
+  margin-top: 20px;
+}
+#take-the2 {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0 auto;
 }
