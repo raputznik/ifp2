@@ -3792,8 +3792,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
+  color: #ffffff;
+  background-color: #144c90;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -6014,7 +6014,7 @@ p {
   padding-bottom: 0;
 }
 .navbar a {
-  color: #164c94 !important;
+  color: #164c94;
 }
 ul.nav a:hover {
   color: #f82620 !important;

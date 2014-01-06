@@ -14,7 +14,7 @@ get_header(); ?>
 	<div id="main" class="container">
 		<div class="row"> <!-- Begin Hero  -->
 			<div class="col-md-12">
-				<img class="img-responsive" src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_ban_02.jpg" alt="Our Expertise">
+				<img class="img-responsive" src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_ban_03.jpg" alt="Our Expertise">
 			</div>
 		</div>
 
