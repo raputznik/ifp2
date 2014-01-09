@@ -14,7 +14,6 @@ html, body {
 
 ul {
 		list-style: none;
-
 }
 
 
@@ -39,6 +38,10 @@ body {
 
 .btn {
 	border-radius: 0;
+}
+
+.btn-success {
+	color: #fff !important;
 }
 
 .btn-big {
@@ -80,11 +83,25 @@ p{
 
 .navbar a{
     color: #164c94;
+
 }
 
-ul.nav a:active {
-    // color: #f82620 !important;
-    // text-decoration: underline;
+.dropdown-menu {
+	float: left;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+
+}
+
+ul.nav li.dropdown a {
+		border-bottom: none !important;
+
+}
+
+navbar.menu-item-50 {
+		border-bottom: none !important;
 
 }
 
@@ -317,11 +334,13 @@ h3 {
 
 .news-textside {
 	font-size: 14px;
+
 }
 
 .site-info {
 	text-align: right;
-	font-size: 14px;
+	font-size: 12px;
+	background-image: url
 }
 
 .contact-info p {
@@ -362,21 +381,27 @@ ul.footer_menu {
 	font-weight: 
 	700;
 }
+
 .footer_menu a{ 
 	color:#000; 
 	text-decoration: none; 
+	border-bottom: none !important;
 }
+
 .footer_menu a:hover { 
 	color:#f82620;
 }
+
 .footer_menu ul {
 	padding: 0;
 }
+
 .footer_menu ul { 
 	margin:0; 
 	padding: 
 	8px 0 0 0;
 }
+
 .footer_menu li li{
 	font-weight: normal;
 	float: none;
@@ -385,10 +410,16 @@ ul.footer_menu {
 // .cleaner{clear: both;}
 .current_page_item a{
 	color: #f82620;
+	    border-bottom: 2px solid #f82620;
+
 }
 
 .footer_menu .current_page_item li a{
-	color: #999;
+	color: #000;
+}
+
+.footer_menu .current_page_item li a:hover{
+	color: #f82620;
 }
 
 

@@ -10,7 +10,7 @@
 ?>
 
 	</div><!-- #content -->
-	</div> <!-- #wrap -->
+	</div> <!-- # End wrap -->
 	<footer id="footer" class="site-footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
@@ -32,11 +32,9 @@
 		<div class="row">
 			<div class="col-md-12">
 					<div class="site-info">
-						<?php do_action( 'upbootwp_credits' ); ?>
-						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
-						<span class="sep"> | </span>
-<!-- 						<?php printf(__('Theme: %1$s by %2$s.', 'upbootwp' ), 'upBootWP', '<a href="http://upplex.de" rel="designer">upplex</a>'); ?>
- -->					</div><!-- .site-info -->
+						<p>Copyright 2014. All rights Reserved. IFP Canada <br>
+						Design by Pace Creative</p>
+ 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->

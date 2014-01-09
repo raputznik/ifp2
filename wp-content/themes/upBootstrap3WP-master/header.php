@@ -32,7 +32,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header container" role="banner">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<nav id="navitron" class="navbar navbar-default navbar-static-top" role="navigation">
 		
 			<div class="container">
 				<div class="row">

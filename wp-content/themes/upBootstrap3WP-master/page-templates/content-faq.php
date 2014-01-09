@@ -1,7 +1,6 @@
-
 <?php
 /**
- * Template Name: Page - ContentMod
+ * Template Name: Page - FAQ
  * The template used for displaying page content in page.php
  *
  * @author Jeremy Dahl | http://pacecreative.com/
@@ -20,7 +19,7 @@ get_header(); ?>
 		</div> <!-- End Hero -->
 		<div class="row">
 			<div class="col-md-10" id="title_holder">
-				<h1 class="entry-title"><?php the_title(); ?></h1>		
+				<h1 class="entry-title">Frequently Asked Questions</h1>		
 			</div>
 			<div class="col-md-2" id="arrow1">
 				<img src="http://localhost:8888/ifp2/wp-content/uploads/2014/01/img_arr_title.jpg" alt="">
