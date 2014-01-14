@@ -31,6 +31,21 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
+	<div class="container">
+		<div class="row topbar">
+			<div class="col-md-6">
+				<div class="eor-title"><p>Proud partner of the EOR Alliance</p></div>
+			</div>
+			<div class="col-md-6 topmenu">
+				<ul id="eor-nav">
+					<li><a href="#">Challenges</a><span class="menu_slash">|</span></li>
+					<li><a href="#">Solutions  </a><span class="menu_slash">|</li>
+					<li><a href="#">Services  </a> <span class="menu_slash">|</li>
+					<li><a href="#">Knowledge Library</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<header id="masthead" class="site-header container" role="banner">
 		<nav id="navitron" class="navbar navbar-default navbar-static-top" role="navigation">
 		
@@ -44,7 +59,7 @@
 					            <span class="icon-bar"></span>
 							</button>
 				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/logo.png" alt="logo"></a>
+				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/logo.png" alt="logo"></a>
 				            
 				        </div>
 						
@@ -54,6 +69,7 @@
 									  'menu_class' => 'nav navbar-nav pull-right',
 									  'fallback_cb' => '',
 			                          'menu_id' => 'main-menu',
+			                          'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
 			                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
 						wp_nav_menu($args);
 						?>

@@ -15,7 +15,7 @@ get_header(); ?>
 	<div id="main" class="container">
 		<div class="row"> <!-- Begin Hero  -->
 			<div class="col-md-12">
-				<img class="img-responsive" src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_ban_04.jpg" alt="Extract more value from every step in the recovery process.">
+				<img class="img-responsive" src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_ban_04.jpg" alt="Extract more value from every step in the recovery process.">
 			</div>
 		</div> <!-- End Hero -->
 		<div class="row">
@@ -23,7 +23,7 @@ get_header(); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>		
 			</div>
 			<div class="col-md-2" id="arrow1">
-				<img src="http://localhost:8888/ifp2/wp-content/uploads/2014/01/img_arr_title.jpg" alt="">
+				<img src="http://palebluedot.ca/test/ifp/wp-content/uploads/2014/01/img_arr_title.jpg" alt="">
 			</div>
 		</div>
 		<div class="row">
@@ -51,7 +51,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-md-2">
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10 bookholder">
 							<div class="book-meeting2"><a class="btn btn-success btn-large btn-big" href="#">Book a meeting</a>
 								</div>
 						</div>

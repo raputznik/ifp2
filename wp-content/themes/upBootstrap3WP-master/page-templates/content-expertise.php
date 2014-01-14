@@ -1,6 +1,7 @@
+
 <?php
 /**
- * Template Name: Page - FAQ
+ * Template Name: Page - Expertise
  * The template used for displaying page content in page.php
  *
  * @author Jeremy Dahl | http://pacecreative.com/
@@ -19,7 +20,7 @@ get_header(); ?>
 		</div> <!-- End Hero -->
 		<div class="row">
 			<div class="col-md-10" id="title_holder">
-				<h1 class="entry-title">Frequently Asked Questions</h1>		
+				<h1 class="entry-title">Our Expertise</h1>		
 			</div>
 			<div class="col-md-2" id="arrow1">
 				<img src="http://palebluedot.ca/test/ifp/wp-content/uploads/2014/01/img_arr_title.jpg" alt="">
@@ -50,7 +51,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-md-2">
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10 bookholder">
 							<div class="book-meeting2"><a class="btn btn-success btn-large btn-big" href="#">Book a meeting</a>
 								</div>
 						</div>

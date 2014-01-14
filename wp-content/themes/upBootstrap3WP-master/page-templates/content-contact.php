@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page - News
+ * Template Name: Page - Contact
  * The template used for displaying page content in page.php
  *
  * @author Jeremy Dahl | http://pacecreative.com/
@@ -29,22 +29,20 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="entry-content maincontent blog1">
 					<div class="col-md-5" id="docbox">
-						<div class="row news_blog">
-							<h3>News & Blog</h3>
-						</div>
-						<div class="row news-links2">
-								<p><p><i>January 01, 2014</i></p></p>
-								<p>News Article Title Here Lorem Ipsum</p>
-							<div class="news-textside">
-							</div>				
-							<a href="#" title="">View More</a>
-								<p><p><i>January 01, 2014</i></p></p>
-							<p>News Article Title Here Lorem Ipsum</p>
-							<div class="news-textside">
-							</div>				
-							<a href="#" title="">View More</a>
-							<div id="clickhere"><a href="#" title=""><h4>Click here for more articles</h4></a></div>
+						<div class="row contact_1">
+							<h3>Headquarters:</h3>
+								IFP Canada
+								Suite 810, 744 – 4th Avenue S.W.
+								Calgary, AB T2P 3T4
 
+						</div>
+			
+						<div class="row contact_1">
+						<br>
+							<h3>Sales &amp; Support:</h3>
+								Eric Delamaide
+								Phone: 403.123.4567
+								Email: eric@ifp-canada.com						
 						</div>
 
 					</div>
@@ -59,14 +57,19 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="row entry-content maincontent blog2">
 					<div class="col-md-5" id="docbox">
-						<div class="row news_blog">
-							<h3>Documents & Resources</h3>
-						</div>
-						<div class="row news-links2">
-								<br>
+						<div class="row contact_1">
+							<h3>General Contact:</h3>
+							Phone: (403) 234-0342
+							Fax: (403) 234-8579
+							Email: info@ifp-canada.com
 
-							<a href="#" title=""><p>Document Title Here Lorem Ipsum</p></a><a href="#" title=""><p>Document Title Here Lorem Ipsum</p></a><a href="#" title=""><p>Document Title Here Lorem Ipsum</p></a><a href="#" title=""><p>Document Title Here Lorem Ipsum</p></a>
-							<div id="clickhere"><a href="#" title=""><h4>Click here for more documents</h4></a></div>
+						</div>
+						<div class="row contact_1">
+							<br>
+							<h3>Another Department Here</h3>
+								Eric Delamaide
+								Phone: 403.123.4567
+								Email: eric@ifp-canada.com
 
 						</div>
 
@@ -94,7 +97,8 @@ get_header(); ?>
 							<!-- spacer -->
 						</div>
 						<div class="col-md-10 bookholder">
-							<div class="book-meeting2"><a class="btn btn-success btn-large btn-big" href="#">Book a meeting</a>
+							<div class="book-meeting2">
+								<a class="btn btn-success btn-large btn-big" href="#">Book a meeting</a>
 							</div>
 						</div>
 					</div>
@@ -117,6 +121,7 @@ get_header(); ?>
 					</div>
 				</div>
 		</div><!-- .row -->
+
 							<?php the_content(); ?>
 					<?php endwhile; // end of the loop. ?>
 					<?php

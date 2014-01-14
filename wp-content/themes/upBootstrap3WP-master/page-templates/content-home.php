@@ -14,7 +14,7 @@ get_header(); ?>
 	<div id="main" class="container">
 		<div class="row"> <!-- Begin Hero  -->
 			<div class="col-md-12">
-				<img class="img-responsive" src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_ban_03.jpg" alt="Our Expertise">
+				<img class="img-responsive" src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_ban_03.jpg" alt="Our Expertise">
 			</div>
 		</div>
 
@@ -34,7 +34,7 @@ get_header(); ?>
 				<div class="col-md-3">
 					<div class="row learn-row">
 						<div class="col-md-2">
-							<div class="question-mark text-center"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
+							<div class="question-mark text-center"><img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
 							</div>
 						</div>
 						<div class="col-md-10 justify">
@@ -53,7 +53,7 @@ get_header(); ?>
 				<div class="col-md-3">
 					<div class="row learn-row">
 						<div class="col-md-2">
-							<div class="question-mark text-center"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
+							<div class="question-mark text-center"><img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
 							</div>
 						</div>
 						<div class="col-md-10 justify">
@@ -72,7 +72,7 @@ get_header(); ?>
 				<div class="col-md-3">
 					<div class="row learn-row">
 						<div class="col-md-2">
-							<div class="question-mark text-center"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
+							<div class="question-mark text-center"><img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
 							</div>
 						</div>
 						<div class="col-md-10 justify">
@@ -91,7 +91,7 @@ get_header(); ?>
 				<div class="col-md-3">
 					<div class="row learn-row">
 						<div class="col-md-2">
-							<div class="question-mark text-center"><img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
+							<div class="question-mark text-center"><img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_que_01.png" alt="question mark">
 							</div>
 						</div>
 						<div class="col-md-10 justify">
@@ -114,7 +114,7 @@ get_header(); ?>
 			</div>
 			<div class="col-md-2 alliance">
 				<div class="eor">
-					<img src="http://localhost:8888/ifp2/wp-content/themes/upBootstrap3WP-master/img/img_eor_2.png" alt="eor alliance">
+					<img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_eor_2.png" alt="eor alliance">
 				</div>
 				<div class="line2"></div>
 			</div>

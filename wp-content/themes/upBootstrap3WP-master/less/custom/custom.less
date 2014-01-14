@@ -2,8 +2,19 @@ html, body {
   height: 100%;
 }
 
+body
+{
+background-image:url('http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/new_background_texture.png');
+background-repeat:repeat;
+} 
+
+p {
+  margin: 0 0 15px;
+}
+
 #wrap {
 	min-height: 100%;
+	display:block;
 	// height: auto !important;
 	// height: 100%;
 	/* Negative indent footer by its height */
@@ -12,14 +23,21 @@ html, body {
 	// padding: 0 0 60px;
 }
 
+.container {
+	max-width: 980px;
+	// width: 995px !important; 
+	background-color: #fff;
+
+}
+
 ul {
-		list-style: none;
+	list-style: none;
 }
 
 
 
 #main {
-	  overflow:auto;
+  // overflow:auto;
   padding-bottom:90px; /* this needs to be bigger than footer height*/
 }
 
@@ -37,30 +55,96 @@ body {
 }
 
 .btn {
-	border-radius: 0;
-}
+	border-radius: 0 !important;
+	color: #fff !important;
+	border-top: none;
+	border-right: none;}
+
 
 .btn-success {
 	color: #fff !important;
+	border-top: none;
+	border-right: none;
+	// background-color: #e23d17;
+	// border-left: 1px solid #bc3313;
+	// border-bottom: 1px solid #bc3313;
+
+}
+
+.btn-success:hover {
+	background-color: darken(@btn-success-bg, 5%);
+
 }
 
 .btn-big {
-	width: 240px;
+	width: 280px;
 	height: 57px;
 	padding-top: 12px;
 	font-size: 20px;
+	border-top: none;
+	border-right: none;}
+
+
+
+.btn-big:hover {
+	background-color: darken(@brand-success-2, 5%) !important;
+	border-color: darken(@brand-success-2, 10%) !important;
 }
+
+.btn-primary {
+	background-color: @brand-primary-2 !important;
+	border: 1px solid #0f396c !important;
+
+}
+
+.btn-primary:hover {
+	background-color: darken(@brand-primary-2, 5%) !important;
+
+}
+
+// .btn-primary a:hover {
+// 	background-color: #0f396c !important;
+
+// }
 
 
 p{
 	line-height: @line-height-base * 0.85;
 }
 
-.container {
-	max-width: 980px;
-	// width: 995px !important; 
-	background-color: #fff;
 
+
+.topbar {
+	// display: table;
+	height: 50px;
+	background-color: #008e92;
+	color: #fff;
+	font-size: 14px;
+	// padding-top: 25px;
+
+}
+
+.topbar a {
+	color: #fff !important;
+}
+
+.topbar ul {
+	float: right;
+	padding-top: 15px;
+}
+
+.topbar li{
+	float: left;
+	display: inline;
+}
+
+.menu_slash {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.eor-title {
+	padding-top: 15px;
 }
 
 .navbar  { 
@@ -81,17 +165,29 @@ p{
 	padding-bottom: 0;
 }
 
-.navbar a{
+.navbar a{	
     color: #164c94;
 
 }
 
+.dropdown-menu a{
+	color: #fff !important;
+}
+
+.dropdown-menu li > a:hover{
+	background-color: #0c305b !important;
+}
+
 .dropdown-menu {
+	// color: @navbar-default-link-hover-color !important; 
+	background-color: #164c94;
 	float: left;
 }
 
+
 ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
+    display: block;   
+
 
 }
 
@@ -104,6 +200,8 @@ navbar.menu-item-50 {
 		border-bottom: none !important;
 
 }
+
+
 
 // This hides the dropdown arrow
 
@@ -260,6 +358,7 @@ navbar.menu-item-50 {
 #take-the {
 	font-weight: 700;
 	font-size: 25px;
+	margin-right: 5%;
 }
 
 .news-side {
@@ -283,7 +382,7 @@ h3 {
 
 .blurb {
 	margin: 10px 0 0 0;
-	padding-left: 10px;
+	// padding-left: 10px;
 	padding-right: 10px;
 }
 
@@ -308,7 +407,7 @@ h3 {
 }
 
 .keep-1 {
-	padding: 2% 0 0 10px; 
+	padding: 2% 0 0 15px; 
 }
 
 .eventsbox {
@@ -316,7 +415,7 @@ h3 {
 }
 
 .form-control {
-	border-radius: 0;
+	border-radius: 0 !important;
 }
 
 .newsholder {
@@ -338,9 +437,10 @@ h3 {
 }
 
 .site-info {
+	padding-top: 15%;
 	text-align: right;
 	font-size: 12px;
-	background-image: url
+
 }
 
 .contact-info p {
@@ -422,6 +522,15 @@ ul.footer_menu {
 	color: #f82620;
 }
 
+#footer_section {
+	height: 200px;
+	width: 980px;
+	// background-color: #cd9696;
+	position: relative;
+	background-image:url('http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_footer.png');
+	background-repeat: no-repeat;
+
+}
 
 
 

@@ -1,5 +1,6 @@
 <?php
 /**
+* Template Name: NewsBlog
  * The Template for displaying all single posts.
  *
  * @author Pace Creative | http://pacecreative.com
@@ -10,21 +11,31 @@ get_header(); ?>
 		<div class="row mainpost">
 			<div class="col-md-8">
 				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
+					<main id="main" class="site-main newsblog" role="main">
 			
-					<?php while ( have_posts() ) : the_post(); ?>
-			
-						<?php get_template_part( 'content', 'single' ); ?>
-			
+			<?php 
+				
+					$args = array(
+						'post_type' => 'post',
+						'orderby' => 'date', 'posts_per_page' => '2'
+					);
+					$query = new WP_Query( $args );
+				
+					while($query->have_posts()): $query->the_post();
+						echo "<ul>";
+						echo "<li>";
+						echo the_title();
+						echo "</li>";
+						echo "</ul>";
+						echo the_excerpt();
+						
+					
 
-			
-						<?php
-							
-							if ( comments_open() || '0' != get_comments_number() )
-								comments_template();
-						?>
-			
-					<?php endwhile; // end of the loop. ?>
+					
+					endwhile;
+				
+				 ?>
+
 			
 					</main><!-- #main -->
 				</div><!-- #primary -->

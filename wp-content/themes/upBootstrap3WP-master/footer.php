@@ -30,7 +30,7 @@
 	<!-- My hand-coded footer menu -->
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12" id="footer_section">
 					<div class="site-info">
 						<p>Copyright 2014. All rights Reserved. IFP Canada <br>
 						Design by Pace Creative</p>

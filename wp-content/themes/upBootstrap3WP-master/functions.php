@@ -116,13 +116,14 @@ require get_template_directory().'/inc/jetpack.php';
 function register_main_menus() {
     register_nav_menus(
         array(
+        	// 'top-bar' => __('Primary Menu'),
             'primary-menu' => __( 'Primary Menu' ),
             'footer' => __( 'Footer Navigation')
         )
     );
 }
 
-
+// register_nav_menu('top-bar', __('Primary Menu'));
 
 /**
  * upbootwp_breadcrumbs function.
