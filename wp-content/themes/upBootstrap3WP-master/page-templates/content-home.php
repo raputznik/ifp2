@@ -14,10 +14,26 @@ get_header(); ?>
 	<div id="main" class="container">
 		<div class="row"> <!-- Begin Hero  -->
 			<div class="col-md-12">
-				<img class="img-responsive" src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_ban_03.jpg" alt="Our Expertise">
+				<img class="img-responsive" src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_ban_05.jpg" alt="Our Expertise">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-1 our_exp_1">
+				<img src="http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_arr_title2.jpg" alt="">
+			</div>
+			<div class="col-md-2 exp_head">
+			<a href="http://ifpcanada.creativepace.com/expertise/" title="">	<h3>Our Expertise</h3></a>
+			</div>
+			<div class="col-md-9 exp_links">
+				<ul id="exp_nav">
+					<li id="exp_link1"><a href="http://ifpcanada.creativepace.com/expertise/geology-reservoir-engineering/">Geology & Reservoir Engineering</a></li>
+					<li><a href="http://ifpcanada.creativepace.com/expertise/chemical-eor/">EOR Technologies</a></li>
+					<li><a href="http://ifpcanada.creativepace.com/expertise/produced-water-management/">Produced Water Management  </a> </li>
+					<li><a href="http://ifpcanada.creativepace.com/expertise/training/">Training</a></li>
+				</ul>
 
+			</div>			
+		</div>
 		<div class="row">
 			<div class="col-md-12 pagination-centered">
 				<div class="information">
@@ -119,7 +135,7 @@ get_header(); ?>
 				<div class="line2"></div>
 			</div>
 
-			<div class="col-md-6 text-center">
+			<div class="col-md-6 text-center book">
 				<div class="row" id="take-the">
 					<p>Take the next step:</p>
 				</div>
@@ -156,18 +172,7 @@ get_header(); ?>
 					</div>
 				</div>				
 				<div class="row newsholder">
-					<div class="col-md-6 newsbox">
-						<div class="keep-1">
-							<h3>Keep in Touch</h3>
-						</div>
-						<div class="blurb">
-							<p>Sign up for our monthly newsletter for industry insights and updates from our team.</p>
-							<div class="form-group">
-	    						<input type="text" class="form-control" placeholder="">
-	  						</div>
-							<div class=""><a class="btn btn-primary btn-large" href="#">Subscribe Now</a></div>
-						</div>
-					</div>	
+					<?php upbootwp_subscribe() ?>
 					<div class="col-md-6 newsbox2">
 						<div class="row keep-1 upcoming-1">
 							<h3>Upcoming Events</h3>

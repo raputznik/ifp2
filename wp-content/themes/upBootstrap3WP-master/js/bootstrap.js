@@ -699,7 +699,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   var Dropdown = function (element) {
     var $el = $(element).on('click.bs.dropdown', this.toggle)
   }
-
+  
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
 

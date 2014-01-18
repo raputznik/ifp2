@@ -30,6 +30,7 @@ function upbootwp_setup() {
 
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),
+		'footer' => __( 'Footer Menu', 'Bootstrap WP Footer' ),
 	) );
 
 	/**
@@ -66,12 +67,48 @@ function upbootwp_widgets_init() {
 add_action( 'widgets_init', 'upbootwp_widgets_init' );
 
 function upbootwp_scripts() {
-	wp_enqueue_style( 'upbootwp-css', get_template_directory_uri().'/css/upbootwp.css', array(), '20130908');
+	//wp_enqueue_style( 'upbootwp-css', get_template_directory_uri().'/css/upbootwp.css', array(), '20130908');
+	wp_enqueue_style( 'upbootwp-jQueryUIcss', get_template_directory_uri().'/js/jquery-ui-1.10.3.custom/css/custom-theme/jquery-ui-1.10.3.custom.min.css', array(), '20130908');
 	wp_enqueue_script( 'upbootwp-jQuery', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
+	
+	wp_enqueue_script( 'upbootwp-custom', get_template_directory_uri().'/js/jqscript.js',array(),'2.0.3',true);
+	wp_localize_script( 'upbootwp-custom', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )) );
+	
 	wp_enqueue_script( 'upbootwp-basefile', get_template_directory_uri().'/js/bootstrap.min.js',array(),'20130905',true);
+	wp_enqueue_script( 'upbootwp-jQueryUI', get_template_directory_uri().'/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js',array(),'20130905',true);
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
 
+// add ajax handler for signup
+function my_frontend_action_callback() {
+	
+	$email = filter_var(trim( $_POST['email'] ), FILTER_VALIDATE_EMAIL);
+	
+	if( false !== $email ) {
+	
+		$email_body = '<b>Email</b>: '.$email;
+		$email_body = '<html><head></head><body>'.$email_body.'</body></html>';
+		
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		
+		$to = 'daniel@creativepace.com';
+		//$to = 'info@ifp-canada.com';
+		
+		$subject = 'IFP Canada Newsletter Signup';
+		
+		$success = true; //mail($to, $subject, $email_body, $headers);
+		
+		echo $success ? 1 : 0;
+	} else {
+		echo 0;
+	}
+	
+	die;
+}
+// trigger for both logged in and not
+add_action( 'wp_ajax_nopriv_ajax_subscribe', 'my_frontend_action_callback' );
+add_action( 'wp_ajax_ajax_subscribe', 'my_frontend_action_callback' );
 
 /**
  * upbootwp_less function.
@@ -84,7 +121,7 @@ function upbootwp_less() {
 	printf('<script type="text/javascript" src="%s"></script>', get_template_directory_uri().'/js/less.js');
 }
 // Enable this when you want to work with less
-//add_action('wp_head', 'upbootwp_less');
+add_action('wp_head', 'upbootwp_less');
 
 
 

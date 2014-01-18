@@ -102,18 +102,8 @@ get_header(); ?>
 						<div class="col-md-2">
 							<!-- spacer -->
 						</div>
-					<div class="col-md-6 newsbox3">
-						<div class="row keep-1">
-							<h3>Keep in Touch</h3>
-						</div>
-						<div class="row blurb">
-							<p>Sign up for our monthly newsletter for industry insights and updates from our team.</p>
-							<div class="form-group">
-	    						<input type="text" class="form-control" placeholder="">
-	  						</div>
-							<div class=""><a class="btn btn-primary btn-large" href="#">Subscribe Now</a></div>
-						</div>
-					</div>	
+					<!-- inc/template-tags.php -->
+					<?php upbootwp_subscribe() ?>
 					</div>
 				</div>
 		</div><!-- .row -->

@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 contact-info">
-				<p><strong>Contact Us</strong>  P: (403) 234-0342  |  F: (403) 234-8579  |  E: info@ifp-canada.com  |  Suite 810, 744 – 4th Avenue S.W., Calgary, AB, T2P 3T4</p>
+				<p><strong>Contact Us</strong>  P: <span class="phone-number"><a href="tel:4032340342">(403) 234-0342</a><span>(403) 234-0342</span></span>  |  F: (403) 234-8579  |  E: <a href="mailto:info@ifp-canada.com">info@ifp-canada.com</a>  |  Suite 810, 744 – 4th Avenue S.W., Calgary, AB, T2P 3T4</p>
 			</div>
 		</div>
 
@@ -41,7 +41,16 @@
 	</div><!-- container -->
 </div><!-- #page -->
 
+<div id="signup-thankyou" title="Thank You">
+	<p>
+		<span class="ui-icon ui-icon-circle-check" style="float:left; margin:5px;"></span>
+		Thank you for signing up for our monthly newsletter!
+	</p>
+</div>
+<div id="signup-error" title="Error">
+	<p>The email address you entered was not valid. Please try again.</p>
+</div>
+			
 <?php wp_footer(); ?>
-
 </body>
 </html>

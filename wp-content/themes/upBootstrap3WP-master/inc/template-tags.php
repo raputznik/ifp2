@@ -247,3 +247,24 @@ function upbootwp_category_transient_flusher() {
 }
 add_action( 'edit_category', 'upbootwp_category_transient_flusher' );
 add_action( 'save_post',     'upbootwp_category_transient_flusher' );
+
+/**
+ * Displays "Keep In Touch" box
+ */
+function upbootwp_subscribe() {
+	?>
+	<div class="col-md-6 newsbox<?php echo is_front_page() ? '' : '3' ?>">
+		<div class="<?php echo is_front_page() ? '' : 'row ' ?>keep-1">
+			<h3>Keep in Touch</h3>
+		</div>
+		<div class="<?php echo is_front_page() ? '' : 'row ' ?>blurb">
+			<p>Sign up for our monthly newsletter for industry insights and updates from our team.</p>
+			<div class="form-group">
+				<input type="text" class="form-control" id="newsletter-email" placeholder="E-Mail Address">
+			</div>
+			<div class=""><a class="btn btn-primary btn-large" id="newsletter-sub" href="#">Subscribe Now</a></div>
+			<div id="newsletter-progress"></div>
+		</div>
+	</div>
+	<?php
+}

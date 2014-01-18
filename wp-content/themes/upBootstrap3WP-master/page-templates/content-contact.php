@@ -19,7 +19,7 @@ get_header(); ?>
 		</div> <!-- End Hero -->
 		<div class="row">
 			<div class="col-md-10" id="title_holder">
-				<h1 class="entry-title"><?php the_title(); ?></h1>		
+				<h1 class="entry-title">Contact Us</h1>		
 			</div>
 			<div class="col-md-2" id="arrow1">
 				<img src="http://palebluedot.ca/test/ifp/wp-content/uploads/2014/01/img_arr_title.jpg" alt="">
@@ -31,8 +31,8 @@ get_header(); ?>
 					<div class="col-md-5" id="docbox">
 						<div class="row contact_1">
 							<h3>Headquarters:</h3>
-								IFP Canada
-								Suite 810, 744 – 4th Avenue S.W.
+								IFP Canada<br>
+								Suite 810, 744 – 4th Avenue S.W.<br>
 								Calgary, AB T2P 3T4
 
 						</div>
@@ -40,9 +40,9 @@ get_header(); ?>
 						<div class="row contact_1">
 						<br>
 							<h3>Sales &amp; Support:</h3>
-								Eric Delamaide
-								Phone: 403.123.4567
-								Email: eric@ifp-canada.com						
+							Phone: (403) 234-0342<br>
+							Fax: (403) 234-8579 <br>
+							Email: <a href="mailto:info@ifp-canada.com">info@ifp-canada.com</a>
 						</div>
 
 					</div>
@@ -59,17 +59,17 @@ get_header(); ?>
 					<div class="col-md-5" id="docbox">
 						<div class="row contact_1">
 							<h3>General Contact:</h3>
-							Phone: (403) 234-0342
-							Fax: (403) 234-8579
-							Email: info@ifp-canada.com
+							Phone: (403) 234-0342<br>
+							Fax: (403) 234-8579<br>
+							Email: <a href="mailto:info@ifp-canada.com">info@ifp-canada.com</a>
 
 						</div>
 						<div class="row contact_1">
 							<br>
 							<h3>Another Department Here</h3>
-								Eric Delamaide
-								Phone: 403.123.4567
-								Email: eric@ifp-canada.com
+								Eric Delamaide<br>
+								Phone (403) 234-0342<br>
+								Email: <a href="mailto:eric.delamaide@ifp-canada.com">eric@ifp-canada.com</a>
 
 						</div>
 
@@ -106,18 +106,7 @@ get_header(); ?>
 						<div class="col-md-2">
 							<!-- spacer -->
 						</div>
-					<div class="col-md-6 newsbox3">
-						<div class="row keep-1">
-							<h3>Keep in Touch</h3>
-						</div>
-						<div class="row blurb">
-							<p>Sign up for our monthly newsletter for industry insights and updates from our team.</p>
-							<div class="form-group">
-	    						<input type="text" class="form-control" placeholder="">
-	  						</div>
-							<div class=""><a class="btn btn-primary btn-large" href="#">Subscribe Now</a></div>
-						</div>
-					</div>	
+					<?php upbootwp_subscribe() ?>
 					</div>
 				</div>
 		</div><!-- .row -->

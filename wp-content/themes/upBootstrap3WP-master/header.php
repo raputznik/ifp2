@@ -31,8 +31,8 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<div class="container">
-		<div class="row topbar">
+	<div class="row topbar">
+		<div class="container">
 			<div class="col-md-6">
 				<div class="eor-title"><p>Proud partner of the EOR Alliance</p></div>
 			</div>

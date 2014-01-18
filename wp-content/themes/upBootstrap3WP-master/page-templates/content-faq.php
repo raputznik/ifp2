@@ -50,7 +50,7 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-md-2">
 						</div>
-						<div class="col-md-10">
+						<div class="col-md-10 bookholder">
 							<div class="book-meeting2"><a class="btn btn-success btn-large btn-big" href="#">Book a meeting</a>
 								</div>
 						</div>

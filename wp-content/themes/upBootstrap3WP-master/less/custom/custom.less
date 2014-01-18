@@ -34,8 +34,6 @@ ul {
 	list-style: none;
 }
 
-
-
 #main {
   // overflow:auto;
   padding-bottom:90px; /* this needs to be bigger than footer height*/
@@ -476,7 +474,7 @@ ul.footer_menu {
 }
 .footer_menu li { 
 	float:left; 
-	padding:20px; 
+	padding:20px 14px; 
 	margin: 0; 
 	font-weight: 
 	700;
@@ -532,19 +530,90 @@ ul.footer_menu {
 
 }
 
+.our_exp_1, .exp_head {
+	display: inline-block;
+	float: left;
+}
+
+.our_exp_1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	// margin-left: 30px;
+	// width: 10%
+
+}
+
+.exp_head {
+	// width: 20%;
+	margin-left: 30px;
+	// margin-right: 30px;
+	padding-right: 0;
+}
+
+.exp_head h3{
+	color: #000 !important;
+	padding-top: 30px;
+
+}
+
+.exp_links {
+	padding-top: 35px;
+	float: left;
+	max-width: 700px;
+	// width: 70%;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+#exp_nav {
+	font-weight: 600;
+	// float: right;
+	padding-left: 0;
+}
+
+#exp_nav li{
+
+	list-style: none;
+	display: inline;
+}
+
+#exp_nav li > a{
+	color: #000 !important;
+
+	padding-left: 20px;
+}
 
 
+/** ADDED BY DANIEL **/
 
+.topbar.row {
+  margin: 0;
+}
+.topbar .container {
+	background: transparent;
+}
+.nextstep .book {
+	border-left: 1px solid #d5d5d5;
+}
 
+/* display unlinked phone numbers, hide linked */
+.phone-number a{
+	display: none;
+}
+.phone-number span {
+	display: inline;
+}
 
+@media (max-width: 767px) {
+ 	/* display linked phone numbers, hide unlinked */
+	.phone-number a{
+		display: inline;
+	}
+	.phone-number span {
+		display: none;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
+.entry-content {
+  padding-top: 24px !important;
+}

@@ -5362,6 +5362,15 @@ th.visible-xs,
 td.visible-xs {
   display: none !important;
 }
+
+/* display unlinked phone numbers, hide linked */
+.phone-number a{
+	display: none;
+}
+.phone-number span {
+	display: inline;
+}
+
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important;
@@ -5373,6 +5382,15 @@ td.visible-xs {
   td.visible-xs {
     display: table-cell !important;
   }
+  
+  /* display linked phone numbers, hide unlinked */
+	.phone-number a{
+		display: inline;
+	}
+	.phone-number span {
+		display: none;
+	}
+  
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-xs.visible-sm {
@@ -6036,6 +6054,9 @@ p {
   color: #fff;
   font-size: 14px;
 }
+.topbar.row {
+  margin: 0;
+}
 .topbar a {
   color: #fff !important;
 }
@@ -6046,6 +6067,9 @@ p {
 .topbar li {
   float: left;
   display: inline;
+}
+.topbar .container {
+	background: transparent;
 }
 .menu_slash {
   padding-left: 8px;
@@ -6195,13 +6219,15 @@ navbar.menu-item-50 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.nextstep .book {
+	border-left: 1px solid #d5d5d5;
+}
 .col-md-4 {
   padding-right: 0 !important;
 }
 #take-the {
   font-weight: 700;
   font-size: 25px;
-  margin-right: 5%;
 }
 .news-side {
   padding: 2% 0 0 10px;
@@ -6296,7 +6322,7 @@ ul.footer_menu {
 }
 .footer_menu li {
   float: left;
-  padding: 20px;
+  padding: 20px 14px;
   margin: 0;
   font-weight: 700;
 }
@@ -6336,6 +6362,42 @@ ul.footer_menu {
   position: relative;
   background-image: url('http://palebluedot.ca/test/ifp/wp-content/themes/upBootstrap3WP-master/img/img_footer.png');
   background-repeat: no-repeat;
+}
+.our_exp_1,
+.exp_head {
+  display: inline-block;
+  float: left;
+}
+.our_exp_1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.exp_head {
+  margin-left: 30px;
+  padding-right: 0;
+}
+.exp_head h3 {
+  color: #000 !important;
+  padding-top: 30px;
+}
+.exp_links {
+  padding-top: 35px;
+  float: left;
+  max-width: 700px;
+  padding-left: 0;
+  margin-left: 0;
+}
+#exp_nav {
+  font-weight: 600;
+  padding-left: 0;
+}
+#exp_nav li {
+  list-style: none;
+  display: inline;
+}
+#exp_nav li > a {
+  color: #000 !important;
+  padding-left: 22px;
 }
 .page-title1 {
   min-height: 60px;
@@ -6498,7 +6560,7 @@ ul.footer_menu {
 }
 .entry-content {
   float: left;
-  padding-top: 10px;
+  padding-top: 22px;
 }
 .newsbox4 {
   float: right;
